@@ -32,6 +32,7 @@ resources = {
 }
 
 def is_resourse_sufficient(order_ingredients):
+    """Check if resourses is sufficient"""
     for item in order_ingredients:
         if order_ingredients[item] >= resources[item]:
             print(f"Sorry there is not {item}")
